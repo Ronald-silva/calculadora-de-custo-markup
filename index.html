@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Lucro/Markup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Lucro/Markup.</h1>
+        
+        <div class="explanation">
+            <h2>Lucro</h2>
+            <p>É a quantia de dinheiro que você ganha com a venda de um produto.</p>
+
+            <h2>Margem de Lucro</h2>
+            <p>É a porcentagem de lucro obtida com a venda de um produto.</p>
+            
+            <h2>Markup</h2>
+            <p>É um percentual que se adiciona ao custo para determinar o preço de venda.</p>
+        </div>
+        
+        <div class="calculator">
+            <label for="cost">Custo do Produto:</label>
+            <input type="number" id="cost" placeholder="Insira o custo" required>
+            
+            <label for="freight">Gasto com Frete:</label>
+            <input type="number" id="freight" placeholder="Insira o gasto com frete" required>
+            
+            <label for="packaging">Gasto com Embalagens:</label>
+            <input type="number" id="packaging" placeholder="Insira o gasto com embalagens" required>
+            
+            <label for="sale-price">Preço de Venda:</label>
+            <input type="number" id="sale-price" placeholder="Insira o preço de venda" required>
+            
+            <button onclick="calculate()">Calcular</button>
+            
+            <div class="results">
+                <p id="profit"></p>
+                <p id="profit-margin"></p>
+                <p id="markup"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
